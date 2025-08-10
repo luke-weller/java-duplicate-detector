@@ -55,18 +55,121 @@ public class DuplicateDetector {
         }
         
         log.info("User provided project path: {}", projectPath);
+        
+        // Performance configuration selection
+        PerformanceConfig config = selectPerformanceConfig(scanner);
+        
         Path path = Paths.get(projectPath);
-        run(path);
+        run(path, config);
         
         scanner.close();
+    }
+    
+    /**
+     * Allows user to select performance configuration.
+     */
+    private PerformanceConfig selectPerformanceConfig(Scanner scanner) {
+        log.info("");
+        log.info("Select performance configuration:");
+        log.info("1. Default (balanced performance and accuracy)");
+        log.info("2. High Performance (optimized for large projects)");
+        log.info("3. High Accuracy (more thorough analysis)");
+        log.info("4. Memory Constrained (for limited memory environments)");
+        log.info("5. Custom configuration");
+        log.info("");
+        log.info("Enter your choice (1-5): ");
+        
+        String choice = scanner.nextLine().trim();
+        
+        switch (choice) {
+            case "1":
+                log.info("Using default configuration");
+                return new PerformanceConfig();
+            case "2":
+                log.info("Using high performance configuration for large projects");
+                return PerformanceConfig.forLargeProjects();
+            case "3":
+                log.info("Using high accuracy configuration");
+                return PerformanceConfig.forHighAccuracy();
+            case "4":
+                log.info("Using memory constrained configuration");
+                return PerformanceConfig.forMemoryConstrained();
+            case "5":
+                return createCustomConfig(scanner);
+            default:
+                log.info("Invalid choice, using default configuration");
+                return new PerformanceConfig();
+        }
+    }
+    
+    /**
+     * Creates a custom performance configuration based on user input.
+     */
+    private PerformanceConfig createCustomConfig(Scanner scanner) {
+        PerformanceConfig config = new PerformanceConfig();
+        
+        log.info("");
+        log.info("Custom Configuration Setup:");
+        
+        // Similarity threshold
+        log.info("Enter similarity threshold (0.0-1.0, default 0.7): ");
+        String thresholdStr = scanner.nextLine().trim();
+        if (!thresholdStr.isEmpty()) {
+            try {
+                double threshold = Double.parseDouble(thresholdStr);
+                if (threshold >= 0.0 && threshold <= 1.0) {
+                    config.setSimilarityThreshold(threshold);
+                }
+            } catch (NumberFormatException e) {
+                log.warn("Invalid threshold, using default");
+            }
+        }
+        
+        // Min method length
+        log.info("Enter minimum method length (default 50): ");
+        String lengthStr = scanner.nextLine().trim();
+        if (!lengthStr.isEmpty()) {
+            try {
+                int length = Integer.parseInt(lengthStr);
+                if (length > 0) {
+                    config.setMinMethodLength(length);
+                }
+            } catch (NumberFormatException e) {
+                log.warn("Invalid length, using default");
+            }
+        }
+        
+        // Parallel threads
+        log.info("Enter number of parallel threads (default {}): ", Runtime.getRuntime().availableProcessors());
+        String threadsStr = scanner.nextLine().trim();
+        if (!threadsStr.isEmpty()) {
+            try {
+                int threads = Integer.parseInt(threadsStr);
+                if (threads > 0) {
+                    config.setMaxParallelThreads(threads);
+                }
+            } catch (NumberFormatException e) {
+                log.warn("Invalid thread count, using default");
+            }
+        }
+        
+        log.info("Custom configuration created: {}", config);
+        return config;
     }
     
     /**
      * Runs the duplicate detection on the specified project path.
      */
     public void run(Path projectPath) {
+        run(projectPath, new PerformanceConfig());
+    }
+    
+    /**
+     * Runs the duplicate detection on the specified project path with custom performance configuration.
+     */
+    public void run(Path projectPath, PerformanceConfig config) {
         try {
-            log.info("Starting duplicate detection for project: {}", projectPath);
+            log.info("Starting duplicate detection for project: {} with config: {}", projectPath, config);
             
             // Step 1: Scan the project for Java files
             log.debug("Step 1: Scanning project for Java files");
@@ -97,7 +200,7 @@ public class DuplicateDetector {
             // Step 3: Detect similar methods
             log.debug("Step 3: Detecting similar methods");
             SimilarityDetector similarityDetector = new SimilarityDetector();
-            List<DuplicateGroup> duplicateGroups = similarityDetector.findSimilarMethods(methods);
+            List<DuplicateGroup> duplicateGroups = similarityDetector.findSimilarMethods(methods, config.getSimilarityThreshold());
             
             // Step 4: Display results
             log.debug("Step 4: Displaying results");
