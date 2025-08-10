@@ -1227,3 +1227,591 @@ java.lang.IllegalArgumentException: Project path does not exist: /non/existent/p
 2025-08-10 13:57:05.999 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 1 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13941321116859573166/Class1.java
 2025-08-10 13:57:06.000 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 1 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13941321116859573166/Class2.java
 2025-08-10 13:57:06.000 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 2
+2025-08-10 14:18:49.697 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:18:49.699 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 1 methods (filtered from 1 total)
+2025-08-10 14:18:49.699 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:18:49.703 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.3
+2025-08-10 14:18:49.703 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:18:49.706 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.6778378378378378)
+2025-08-10 14:18:49.708 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.6778378378378378)
+2025-08-10 14:18:49.708 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:18:49.709 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:18:49.709 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 0 methods (filtered from 0 total)
+2025-08-10 14:18:49.709 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:18:49.710 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.95
+2025-08-10 14:18:49.710 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:18:49.710 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:18:49.711 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.8
+2025-08-10 14:18:49.711 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:18:49.712 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9400000000000001)
+2025-08-10 14:18:49.713 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9400000000000001)
+2025-08-10 14:18:49.713 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:18:49.714 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:18:49.714 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 0 methods (filtered from 2 total)
+2025-08-10 14:18:49.714 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:18:49.715 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:18:49.715 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:18:49.716 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:18:49.716 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:18:49.716 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:18:49.717 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:18:49.717 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 4 methods (filtered from 4 total)
+2025-08-10 14:18:49.717 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:18:49.718 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:18:49.718 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method3 and method4 (similarity: 0.8298550724637682)
+2025-08-10 14:18:49.719 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.8298550724637682)
+2025-08-10 14:18:49.719 [main] INFO  c.d.similarity.SimilarityDetector - Found 2 duplicate groups
+2025-08-10 14:18:49.720 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.8
+2025-08-10 14:18:49.720 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:18:49.721 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:18:49.721 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:18:49.722 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:18:49.722 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:18:49.722 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:18:49.722 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:18:49.748 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit1491969549243106156
+2025-08-10 14:18:49.748 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:18:49.748 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit1491969549243106156
+2025-08-10 14:18:49.749 [main] INFO  c.d.scanner.ProjectScanner - Found 0 Java files in project
+2025-08-10 14:18:49.749 [main] WARN  c.d.DuplicateDetector - No Java files found in the specified project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit1491969549243106156
+2025-08-10 14:18:49.751 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /non/existent/path
+2025-08-10 14:18:49.752 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:18:49.752 [main] ERROR c.d.DuplicateDetector - Error during duplicate detection for project: /non/existent/path
+java.lang.IllegalArgumentException: Project path does not exist: /non/existent/path
+	at com.duplicatedetector.scanner.ProjectScanner.scanProject(ProjectScanner.java:32)
+	at com.duplicatedetector.DuplicateDetector.run(DuplicateDetector.java:70)
+	at com.duplicatedetector.DuplicateDetectorTest.lambda$testRunWithNonExistentPath$0(DuplicateDetectorTest.java:74)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3083)
+	at com.duplicatedetector.DuplicateDetectorTest.testRunWithNonExistentPath(DuplicateDetectorTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-08-10 14:18:49.756 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580
+2025-08-10 14:18:49.756 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:18:49.756 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580
+2025-08-10 14:18:49.756 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/ArrayProcessor.java
+2025-08-10 14:18:49.756 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/DataProcessor.java
+2025-08-10 14:18:49.756 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:18:49.756 [main] INFO  c.d.DuplicateDetector - Found 2 Java files to analyze
+2025-08-10 14:18:49.756 [main] DEBUG c.d.DuplicateDetector - Java files found: [/var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/ArrayProcessor.java, /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/DataProcessor.java]
+2025-08-10 14:18:49.756 [main] DEBUG c.d.DuplicateDetector - Step 2: Analyzing methods in all files
+2025-08-10 14:18:49.825 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 2 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/ArrayProcessor.java
+2025-08-10 14:18:49.829 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 2 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/DataProcessor.java
+2025-08-10 14:18:49.829 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 4
+2025-08-10 14:18:49.829 [main] INFO  c.d.DuplicateDetector - Analyzed 4 methods from 2 files
+2025-08-10 14:18:49.830 [main] DEBUG c.d.DuplicateDetector - Methods found: [com.test.ArrayProcessor.processData, com.test.ArrayProcessor.calculateSum, com.test.DataProcessor.processData, com.test.DataProcessor.calculateSum]
+2025-08-10 14:18:49.830 [main] DEBUG c.d.DuplicateDetector - Step 3: Detecting similar methods
+2025-08-10 14:18:49.830 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:18:49.830 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 4 methods (filtered from 4 total)
+2025-08-10 14:18:49.831 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: processData and processData (similarity: 0.9926470588235294)
+2025-08-10 14:18:49.831 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9926470588235294)
+2025-08-10 14:18:49.831 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: calculateSum and calculateSum (similarity: 0.8478632478632477)
+2025-08-10 14:18:49.831 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.8478632478632477)
+2025-08-10 14:18:49.831 [main] INFO  c.d.similarity.SimilarityDetector - Found 2 duplicate groups
+2025-08-10 14:18:49.831 [main] DEBUG c.d.DuplicateDetector - Step 4: Displaying results
+2025-08-10 14:18:49.831 [main] INFO  c.d.DuplicateDetector - === Duplicate Detection Results ===
+2025-08-10 14:18:49.831 [main] INFO  c.d.DuplicateDetector - Found 2 groups of similar methods:
+2025-08-10 14:18:49.831 [main] INFO  c.d.DuplicateDetector - Group 1 (Similarity: {:.1f}%):
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector -   - ArrayProcessor.processData() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/ArrayProcessor.java
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector -   - DataProcessor.processData() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/DataProcessor.java
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector -   Suggested refactoring: Extract common logic into a shared method
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector - 
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector - Group 2 (Similarity: {:.1f}%):
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector -   - ArrayProcessor.calculateSum() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/ArrayProcessor.java
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector -   - DataProcessor.calculateSum() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9134566193312947580/src/main/java/DataProcessor.java
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector -   Suggested refactoring: Extract common logic into a shared method
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector - 
+2025-08-10 14:18:49.832 [main] INFO  c.d.DuplicateDetector - === End of Results ===
+2025-08-10 14:18:49.834 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511
+2025-08-10 14:18:49.834 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:18:49.834 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511
+2025-08-10 14:18:49.834 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511/EmptyClass1.java
+2025-08-10 14:18:49.834 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511/EmptyClass2.java
+2025-08-10 14:18:49.835 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:18:49.835 [main] INFO  c.d.DuplicateDetector - Found 2 Java files to analyze
+2025-08-10 14:18:49.835 [main] DEBUG c.d.DuplicateDetector - Java files found: [/var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511/EmptyClass1.java, /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511/EmptyClass2.java]
+2025-08-10 14:18:49.835 [main] DEBUG c.d.DuplicateDetector - Step 2: Analyzing methods in all files
+2025-08-10 14:18:49.835 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 0 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511/EmptyClass1.java
+2025-08-10 14:18:49.836 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 0 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511/EmptyClass2.java
+2025-08-10 14:18:49.836 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 0
+2025-08-10 14:18:49.836 [main] WARN  c.d.DuplicateDetector - No methods found in the project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5449926633742430511
+2025-08-10 14:18:49.867 [main] DEBUG c.d.scanner.ProjectScanner - File /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8024061919663019474/TestClass1.java has 5 lines
+2025-08-10 14:18:49.867 [main] DEBUG c.d.scanner.ProjectScanner - File /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8024061919663019474/TestClass2.java has 5 lines
+2025-08-10 14:18:49.869 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8054540984751874566
+2025-08-10 14:18:49.870 [main] INFO  c.d.scanner.ProjectScanner - Found 0 Java files in project
+2025-08-10 14:18:49.873 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5198962789871368075
+2025-08-10 14:18:49.873 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5198962789871368075/src/main/java/TestClass1.java
+2025-08-10 14:18:49.873 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5198962789871368075/src/main/java/com/test/TestClass2.java
+2025-08-10 14:18:49.873 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:18:49.876 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9855552585651778109
+2025-08-10 14:18:49.876 [main] DEBUG c.d.scanner.ProjectScanner - Excluding directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9855552585651778109/target
+2025-08-10 14:18:49.876 [main] DEBUG c.d.scanner.ProjectScanner - Excluding directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9855552585651778109/build
+2025-08-10 14:18:49.876 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit9855552585651778109/src/TestClass.java
+2025-08-10 14:18:49.876 [main] INFO  c.d.scanner.ProjectScanner - Found 1 Java files in project
+2025-08-10 14:18:49.878 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8792777722529869945
+2025-08-10 14:18:49.878 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8792777722529869945/src/TestClass1.java
+2025-08-10 14:18:49.878 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8792777722529869945/src/TestClass2.java
+2025-08-10 14:18:49.878 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:18:49.881 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 1 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit11462040344227598727/Class1.java
+2025-08-10 14:18:49.882 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 1 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit11462040344227598727/Class2.java
+2025-08-10 14:18:49.882 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 2
+2025-08-10 14:19:39.510 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:39.511 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 1 methods (filtered from 1 total)
+2025-08-10 14:19:39.511 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:39.515 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.3
+2025-08-10 14:19:39.515 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:39.517 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.6778378378378378)
+2025-08-10 14:19:39.520 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.6778378378378378)
+2025-08-10 14:19:39.520 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:19:39.521 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:39.521 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 0 methods (filtered from 0 total)
+2025-08-10 14:19:39.521 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:39.522 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.95
+2025-08-10 14:19:39.522 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:39.523 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:39.523 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.8
+2025-08-10 14:19:39.524 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:39.524 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9400000000000001)
+2025-08-10 14:19:39.525 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9400000000000001)
+2025-08-10 14:19:39.525 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:19:39.527 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:39.527 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 0 methods (filtered from 2 total)
+2025-08-10 14:19:39.527 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:39.528 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:39.528 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:39.529 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:19:39.529 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:19:39.529 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:19:39.530 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:39.530 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 4 methods (filtered from 4 total)
+2025-08-10 14:19:39.530 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:19:39.531 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:19:39.531 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method3 and method4 (similarity: 0.8298550724637682)
+2025-08-10 14:19:39.531 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.8298550724637682)
+2025-08-10 14:19:39.532 [main] INFO  c.d.similarity.SimilarityDetector - Found 2 duplicate groups
+2025-08-10 14:19:39.532 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.8
+2025-08-10 14:19:39.532 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:39.533 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:39.534 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:39.534 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:39.534 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:19:39.534 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:19:39.534 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:19:39.560 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10303014130859444711
+2025-08-10 14:19:39.560 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:19:39.560 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10303014130859444711
+2025-08-10 14:19:39.561 [main] INFO  c.d.scanner.ProjectScanner - Found 0 Java files in project
+2025-08-10 14:19:39.561 [main] WARN  c.d.DuplicateDetector - No Java files found in the specified project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10303014130859444711
+2025-08-10 14:19:39.564 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /non/existent/path
+2025-08-10 14:19:39.564 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:19:39.564 [main] ERROR c.d.DuplicateDetector - Error during duplicate detection for project: /non/existent/path
+java.lang.IllegalArgumentException: Project path does not exist: /non/existent/path
+	at com.duplicatedetector.scanner.ProjectScanner.scanProject(ProjectScanner.java:32)
+	at com.duplicatedetector.DuplicateDetector.run(DuplicateDetector.java:70)
+	at com.duplicatedetector.DuplicateDetectorTest.lambda$testRunWithNonExistentPath$0(DuplicateDetectorTest.java:74)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3083)
+	at com.duplicatedetector.DuplicateDetectorTest.testRunWithNonExistentPath(DuplicateDetectorTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-08-10 14:19:39.566 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677
+2025-08-10 14:19:39.566 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:19:39.566 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677
+2025-08-10 14:19:39.567 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/ArrayProcessor.java
+2025-08-10 14:19:39.567 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/DataProcessor.java
+2025-08-10 14:19:39.567 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:19:39.567 [main] INFO  c.d.DuplicateDetector - Found 2 Java files to analyze
+2025-08-10 14:19:39.567 [main] DEBUG c.d.DuplicateDetector - Java files found: [/var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/ArrayProcessor.java, /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/DataProcessor.java]
+2025-08-10 14:19:39.567 [main] DEBUG c.d.DuplicateDetector - Step 2: Analyzing methods in all files
+2025-08-10 14:19:39.637 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 2 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/ArrayProcessor.java
+2025-08-10 14:19:39.640 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 2 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/DataProcessor.java
+2025-08-10 14:19:39.640 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 4
+2025-08-10 14:19:39.640 [main] INFO  c.d.DuplicateDetector - Analyzed 4 methods from 2 files
+2025-08-10 14:19:39.641 [main] DEBUG c.d.DuplicateDetector - Methods found: [com.test.ArrayProcessor.processData, com.test.ArrayProcessor.calculateSum, com.test.DataProcessor.processData, com.test.DataProcessor.calculateSum]
+2025-08-10 14:19:39.641 [main] DEBUG c.d.DuplicateDetector - Step 3: Detecting similar methods
+2025-08-10 14:19:39.641 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:39.641 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 4 methods (filtered from 4 total)
+2025-08-10 14:19:39.641 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: processData and processData (similarity: 0.9926470588235294)
+2025-08-10 14:19:39.642 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9926470588235294)
+2025-08-10 14:19:39.642 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: calculateSum and calculateSum (similarity: 0.8478632478632477)
+2025-08-10 14:19:39.642 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.8478632478632477)
+2025-08-10 14:19:39.642 [main] INFO  c.d.similarity.SimilarityDetector - Found 2 duplicate groups
+2025-08-10 14:19:39.642 [main] DEBUG c.d.DuplicateDetector - Step 4: Displaying results
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector - === Duplicate Detection Results ===
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector - Found 2 groups of similar methods:
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector - Group 1 (Similarity: {:.1f}%):
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector -   - ArrayProcessor.processData() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/ArrayProcessor.java
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector -   - DataProcessor.processData() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/DataProcessor.java
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector -   Suggested refactoring: Extract common logic into a shared method
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector - 
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector - Group 2 (Similarity: {:.1f}%):
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector -   - ArrayProcessor.calculateSum() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/ArrayProcessor.java
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector -   - DataProcessor.calculateSum() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15735022299244182677/src/main/java/DataProcessor.java
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector -   Suggested refactoring: Extract common logic into a shared method
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector - 
+2025-08-10 14:19:39.642 [main] INFO  c.d.DuplicateDetector - === End of Results ===
+2025-08-10 14:19:39.645 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674
+2025-08-10 14:19:39.645 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:19:39.645 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674
+2025-08-10 14:19:39.645 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674/EmptyClass1.java
+2025-08-10 14:19:39.645 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674/EmptyClass2.java
+2025-08-10 14:19:39.645 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:19:39.645 [main] INFO  c.d.DuplicateDetector - Found 2 Java files to analyze
+2025-08-10 14:19:39.645 [main] DEBUG c.d.DuplicateDetector - Java files found: [/var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674/EmptyClass1.java, /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674/EmptyClass2.java]
+2025-08-10 14:19:39.645 [main] DEBUG c.d.DuplicateDetector - Step 2: Analyzing methods in all files
+2025-08-10 14:19:39.645 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 0 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674/EmptyClass1.java
+2025-08-10 14:19:39.646 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 0 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674/EmptyClass2.java
+2025-08-10 14:19:39.646 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 0
+2025-08-10 14:19:39.646 [main] WARN  c.d.DuplicateDetector - No methods found in the project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit13081344939456713674
+2025-08-10 14:19:39.666 [main] DEBUG c.d.scanner.ProjectScanner - File /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15231359917241583808/TestClass1.java has 5 lines
+2025-08-10 14:19:39.667 [main] DEBUG c.d.scanner.ProjectScanner - File /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit15231359917241583808/TestClass2.java has 5 lines
+2025-08-10 14:19:39.668 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit132815451187879647
+2025-08-10 14:19:39.668 [main] INFO  c.d.scanner.ProjectScanner - Found 0 Java files in project
+2025-08-10 14:19:39.671 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit17419185443363836612
+2025-08-10 14:19:39.671 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit17419185443363836612/src/main/java/TestClass1.java
+2025-08-10 14:19:39.672 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit17419185443363836612/src/main/java/com/test/TestClass2.java
+2025-08-10 14:19:39.672 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:19:39.675 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8146285562254712969
+2025-08-10 14:19:39.675 [main] DEBUG c.d.scanner.ProjectScanner - Excluding directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8146285562254712969/target
+2025-08-10 14:19:39.675 [main] DEBUG c.d.scanner.ProjectScanner - Excluding directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8146285562254712969/build
+2025-08-10 14:19:39.675 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit8146285562254712969/src/TestClass.java
+2025-08-10 14:19:39.675 [main] INFO  c.d.scanner.ProjectScanner - Found 1 Java files in project
+2025-08-10 14:19:39.677 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit357102122345162365
+2025-08-10 14:19:39.677 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit357102122345162365/src/TestClass1.java
+2025-08-10 14:19:39.677 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit357102122345162365/src/TestClass2.java
+2025-08-10 14:19:39.677 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:19:39.680 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 1 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit4022899880218646454/Class1.java
+2025-08-10 14:19:39.681 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 1 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit4022899880218646454/Class2.java
+2025-08-10 14:19:39.681 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 2
+2025-08-10 14:19:45.865 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:45.867 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 1 methods (filtered from 1 total)
+2025-08-10 14:19:45.867 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:45.871 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.3
+2025-08-10 14:19:45.871 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:45.875 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.6778378378378378)
+2025-08-10 14:19:45.877 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.6778378378378378)
+2025-08-10 14:19:45.877 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:19:45.879 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:45.880 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 0 methods (filtered from 0 total)
+2025-08-10 14:19:45.880 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:45.881 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.95
+2025-08-10 14:19:45.881 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:45.882 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:45.883 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.8
+2025-08-10 14:19:45.883 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:45.884 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9400000000000001)
+2025-08-10 14:19:45.886 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9400000000000001)
+2025-08-10 14:19:45.886 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:19:45.887 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:45.888 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 0 methods (filtered from 2 total)
+2025-08-10 14:19:45.888 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:45.889 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:45.889 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:45.890 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:19:45.890 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:19:45.890 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:19:45.891 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:45.891 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 4 methods (filtered from 4 total)
+2025-08-10 14:19:45.892 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:19:45.892 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:19:45.893 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method3 and method4 (similarity: 0.8298550724637682)
+2025-08-10 14:19:45.893 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.8298550724637682)
+2025-08-10 14:19:45.893 [main] INFO  c.d.similarity.SimilarityDetector - Found 2 duplicate groups
+2025-08-10 14:19:45.894 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.8
+2025-08-10 14:19:45.894 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:45.894 [main] INFO  c.d.similarity.SimilarityDetector - Found 0 duplicate groups
+2025-08-10 14:19:45.895 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:45.895 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 2 methods (filtered from 2 total)
+2025-08-10 14:19:45.895 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: method1 and method2 (similarity: 0.9351923076923078)
+2025-08-10 14:19:45.896 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9351923076923078)
+2025-08-10 14:19:45.896 [main] INFO  c.d.similarity.SimilarityDetector - Found 1 duplicate groups
+2025-08-10 14:19:45.930 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5722369903908991042
+2025-08-10 14:19:45.930 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:19:45.931 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5722369903908991042
+2025-08-10 14:19:45.932 [main] INFO  c.d.scanner.ProjectScanner - Found 0 Java files in project
+2025-08-10 14:19:45.932 [main] WARN  c.d.DuplicateDetector - No Java files found in the specified project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit5722369903908991042
+2025-08-10 14:19:45.934 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /non/existent/path
+2025-08-10 14:19:45.934 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:19:45.934 [main] ERROR c.d.DuplicateDetector - Error during duplicate detection for project: /non/existent/path
+java.lang.IllegalArgumentException: Project path does not exist: /non/existent/path
+	at com.duplicatedetector.scanner.ProjectScanner.scanProject(ProjectScanner.java:32)
+	at com.duplicatedetector.DuplicateDetector.run(DuplicateDetector.java:70)
+	at com.duplicatedetector.DuplicateDetectorTest.lambda$testRunWithNonExistentPath$0(DuplicateDetectorTest.java:74)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3083)
+	at com.duplicatedetector.DuplicateDetectorTest.testRunWithNonExistentPath(DuplicateDetectorTest.java:73)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2025-08-10 14:19:45.937 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905
+2025-08-10 14:19:45.937 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:19:45.937 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905
+2025-08-10 14:19:45.937 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/ArrayProcessor.java
+2025-08-10 14:19:45.937 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/DataProcessor.java
+2025-08-10 14:19:45.938 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:19:45.938 [main] INFO  c.d.DuplicateDetector - Found 2 Java files to analyze
+2025-08-10 14:19:45.938 [main] DEBUG c.d.DuplicateDetector - Java files found: [/var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/ArrayProcessor.java, /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/DataProcessor.java]
+2025-08-10 14:19:45.938 [main] DEBUG c.d.DuplicateDetector - Step 2: Analyzing methods in all files
+2025-08-10 14:19:46.004 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 2 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/ArrayProcessor.java
+2025-08-10 14:19:46.007 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 2 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/DataProcessor.java
+2025-08-10 14:19:46.007 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 4
+2025-08-10 14:19:46.007 [main] INFO  c.d.DuplicateDetector - Analyzed 4 methods from 2 files
+2025-08-10 14:19:46.007 [main] DEBUG c.d.DuplicateDetector - Methods found: [com.test.ArrayProcessor.processData, com.test.ArrayProcessor.calculateSum, com.test.DataProcessor.processData, com.test.DataProcessor.calculateSum]
+2025-08-10 14:19:46.007 [main] DEBUG c.d.DuplicateDetector - Step 3: Detecting similar methods
+2025-08-10 14:19:46.007 [main] INFO  c.d.similarity.SimilarityDetector - Finding similar methods with threshold: 0.7
+2025-08-10 14:19:46.007 [main] INFO  c.d.similarity.SimilarityDetector - Analyzing 4 methods (filtered from 4 total)
+2025-08-10 14:19:46.008 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: processData and processData (similarity: 0.9926470588235294)
+2025-08-10 14:19:46.008 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.9926470588235294)
+2025-08-10 14:19:46.008 [main] DEBUG c.d.similarity.SimilarityDetector - Found similar methods: calculateSum and calculateSum (similarity: 0.8478632478632477)
+2025-08-10 14:19:46.008 [main] INFO  c.d.similarity.SimilarityDetector - Created duplicate group with 2 methods (similarity: 0.8478632478632477)
+2025-08-10 14:19:46.008 [main] INFO  c.d.similarity.SimilarityDetector - Found 2 duplicate groups
+2025-08-10 14:19:46.008 [main] DEBUG c.d.DuplicateDetector - Step 4: Displaying results
+2025-08-10 14:19:46.008 [main] INFO  c.d.DuplicateDetector - === Duplicate Detection Results ===
+2025-08-10 14:19:46.008 [main] INFO  c.d.DuplicateDetector - Found 2 groups of similar methods:
+2025-08-10 14:19:46.008 [main] INFO  c.d.DuplicateDetector - Group 1 (Similarity: {:.1f}%):
+2025-08-10 14:19:46.008 [main] INFO  c.d.DuplicateDetector -   - ArrayProcessor.processData() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/ArrayProcessor.java
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector -   - DataProcessor.processData() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/DataProcessor.java
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector -   Suggested refactoring: Extract common logic into a shared method
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector - 
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector - Group 2 (Similarity: {:.1f}%):
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector -   - ArrayProcessor.calculateSum() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/ArrayProcessor.java
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector -   - DataProcessor.calculateSum() in /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit2131498178886282905/src/main/java/DataProcessor.java
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector -   Suggested refactoring: Extract common logic into a shared method
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector - 
+2025-08-10 14:19:46.009 [main] INFO  c.d.DuplicateDetector - === End of Results ===
+2025-08-10 14:19:46.011 [main] INFO  c.d.DuplicateDetector - Starting duplicate detection for project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494
+2025-08-10 14:19:46.011 [main] DEBUG c.d.DuplicateDetector - Step 1: Scanning project for Java files
+2025-08-10 14:19:46.011 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494
+2025-08-10 14:19:46.011 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494/EmptyClass1.java
+2025-08-10 14:19:46.011 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494/EmptyClass2.java
+2025-08-10 14:19:46.011 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:19:46.011 [main] INFO  c.d.DuplicateDetector - Found 2 Java files to analyze
+2025-08-10 14:19:46.011 [main] DEBUG c.d.DuplicateDetector - Java files found: [/var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494/EmptyClass1.java, /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494/EmptyClass2.java]
+2025-08-10 14:19:46.011 [main] DEBUG c.d.DuplicateDetector - Step 2: Analyzing methods in all files
+2025-08-10 14:19:46.012 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 0 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494/EmptyClass1.java
+2025-08-10 14:19:46.012 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 0 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494/EmptyClass2.java
+2025-08-10 14:19:46.012 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 0
+2025-08-10 14:19:46.012 [main] WARN  c.d.DuplicateDetector - No methods found in the project: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit10120221661342121494
+2025-08-10 14:19:46.032 [main] DEBUG c.d.scanner.ProjectScanner - File /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit3293039259615290994/TestClass1.java has 5 lines
+2025-08-10 14:19:46.032 [main] DEBUG c.d.scanner.ProjectScanner - File /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit3293039259615290994/TestClass2.java has 5 lines
+2025-08-10 14:19:46.033 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit6572811047389299705
+2025-08-10 14:19:46.033 [main] INFO  c.d.scanner.ProjectScanner - Found 0 Java files in project
+2025-08-10 14:19:46.035 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit3985382727943007197
+2025-08-10 14:19:46.035 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit3985382727943007197/src/main/java/TestClass1.java
+2025-08-10 14:19:46.035 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit3985382727943007197/src/main/java/com/test/TestClass2.java
+2025-08-10 14:19:46.036 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:19:46.039 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit343252148781880026
+2025-08-10 14:19:46.039 [main] DEBUG c.d.scanner.ProjectScanner - Excluding directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit343252148781880026/target
+2025-08-10 14:19:46.039 [main] DEBUG c.d.scanner.ProjectScanner - Excluding directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit343252148781880026/build
+2025-08-10 14:19:46.039 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit343252148781880026/src/TestClass.java
+2025-08-10 14:19:46.040 [main] INFO  c.d.scanner.ProjectScanner - Found 1 Java files in project
+2025-08-10 14:19:46.041 [main] INFO  c.d.scanner.ProjectScanner - Scanning project directory: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit7395181912056352502
+2025-08-10 14:19:46.042 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit7395181912056352502/src/TestClass1.java
+2025-08-10 14:19:46.042 [main] DEBUG c.d.scanner.ProjectScanner - Found Java file: /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit7395181912056352502/src/TestClass2.java
+2025-08-10 14:19:46.042 [main] INFO  c.d.scanner.ProjectScanner - Found 2 Java files in project
+2025-08-10 14:19:46.046 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 1 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit11732947044577366386/Class1.java
+2025-08-10 14:19:46.047 [main] DEBUG c.d.analyzer.MethodAnalyzer - Extracted 1 methods from /var/folders/10/m5m_cm591fldw6458plrhgw00000gp/T/junit11732947044577366386/Class2.java
+2025-08-10 14:19:46.047 [main] INFO  c.d.analyzer.MethodAnalyzer - Total methods extracted: 2
