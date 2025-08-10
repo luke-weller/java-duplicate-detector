@@ -1,0 +1,6 @@
+/Users/luke/java-duplicate-detector/src/main/java/com/duplicatedetector/model/DuplicateGroup.java
+/Users/luke/java-duplicate-detector/src/main/java/com/duplicatedetector/scanner/ProjectScanner.java
+/Users/luke/java-duplicate-detector/src/main/java/com/duplicatedetector/similarity/SimilarityDetector.java
+/Users/luke/java-duplicate-detector/src/main/java/com/duplicatedetector/DuplicateDetector.java
+/Users/luke/java-duplicate-detector/src/main/java/com/duplicatedetector/model/MethodInfo.java
+/Users/luke/java-duplicate-detector/src/main/java/com/duplicatedetector/analyzer/MethodAnalyzer.java

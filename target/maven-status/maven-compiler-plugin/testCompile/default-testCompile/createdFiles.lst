@@ -1,0 +1,6 @@
+com/duplicatedetector/analyzer/MethodAnalyzerTest.class
+com/duplicatedetector/DuplicateDetectorTest.class
+com/duplicatedetector/scanner/ProjectScannerTest.class
+com/duplicatedetector/model/MethodInfoTest.class
+com/duplicatedetector/similarity/SimilarityDetectorTest.class
+com/duplicatedetector/model/DuplicateGroupTest.class
