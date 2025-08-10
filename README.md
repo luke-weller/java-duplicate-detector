@@ -100,13 +100,13 @@ Enter the path to your Java project: /path/to/project
 Found 2 groups of similar methods:
 
 Group 1 (Similarity: 85.2%):
-  - DataProcessor.processData() in src/main/java/com/test/DataProcessor.java
-  - ArrayProcessor.processData() in src/main/java/com/test/ArrayProcessor.java
+  - DataProcessor.processData() in src/main/java/com/test/DataProcessor.java (lines 15-45)
+  - ArrayProcessor.processData() in src/main/java/com/test/ArrayProcessor.java (lines 23-53)
   Suggested refactoring: Extract common logic into a shared method
 
 Group 2 (Similarity: 78.9%):
-  - DataProcessor.calculateSum() in src/main/java/com/test/DataProcessor.java
-  - ArrayProcessor.calculateSum() in src/main/java/com/test/ArrayProcessor.java
+  - DataProcessor.calculateSum() in src/main/java/com/test/DataProcessor.java (lines 47-67)
+  - ArrayProcessor.calculateSum() in src/main/java/com/test/ArrayProcessor.java (lines 55-75)
   Suggested refactoring: Extract common logic into a shared method
 
 === End of Results ===

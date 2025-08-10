@@ -120,13 +120,16 @@ public class DuplicateDetector {
         
         for (int i = 0; i < duplicateGroups.size(); i++) {
             DuplicateGroup group = duplicateGroups.get(i);
-            log.info("Group {} (Similarity: {:.1f}%):", i + 1, group.getSimilarityScore() * 100);
+            String similarityPercentage = String.format("%.1f", group.getSimilarityScore() * 100);
+            log.info("Group {} (Similarity: {}%):", i + 1, similarityPercentage);
             
             for (MethodInfo method : group.getMethods()) {
-                log.info("  - {}.{}() in {}", 
+                log.info("  - {}.{}() in {} (lines {}-{})", 
                     method.getClassName(), 
                     method.getMethodName(), 
-                    method.getFilePath());
+                    method.getFilePath(),
+                    method.getStartLine(),
+                    method.getEndLine());
             }
             
             if (group.getMethods().size() > 1) {
