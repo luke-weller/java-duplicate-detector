@@ -172,7 +172,8 @@ class DuplicateDetectorEnhancedOutputTest {
             
             // Verify next steps
             assertTrue(output.contains("💡 Next Steps:"));
-            assertTrue(output.contains("Review high severity duplications first"));
+            assertTrue(output.contains("Review groups in order (highest similarity first)"));
+            assertTrue(output.contains("Focus on high severity duplications"));
             assertTrue(output.contains("Apply recommended design patterns"));
             assertTrue(output.contains("Consider creating shared utility classes"));
             assertTrue(output.contains("Update unit tests after refactoring"));

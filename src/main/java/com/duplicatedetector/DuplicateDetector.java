@@ -7,6 +7,8 @@ import com.duplicatedetector.model.MethodInfo;
 import com.duplicatedetector.model.DuplicateGroup;
 import com.duplicatedetector.scanner.ProjectScanner;
 import com.duplicatedetector.similarity.SimilarityDetector;
+
+import java.util.ArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -118,19 +120,24 @@ public class DuplicateDetector {
             return;
         }
         
-        log.info("🔍 Found {} groups of similar methods requiring attention:", duplicateGroups.size());
+        // Sort groups by similarity score (highest first) for better prioritization
+        List<DuplicateGroup> sortedGroups = new ArrayList<>(duplicateGroups);
+        sortedGroups.sort((g1, g2) -> Double.compare(g2.getSimilarityScore(), g1.getSimilarityScore()));
+        
+        log.info("🔍 Found {} groups of similar methods requiring attention:", sortedGroups.size());
+        log.info("📊 Groups are ordered by similarity score (highest first) for prioritization");
         log.info("");
         
         RefactoringAnalyzer analyzer = new RefactoringAnalyzer();
         
-        for (int i = 0; i < duplicateGroups.size(); i++) {
-            DuplicateGroup group = duplicateGroups.get(i);
+        for (int i = 0; i < sortedGroups.size(); i++) {
+            DuplicateGroup group = sortedGroups.get(i);
             RefactoringAnalysis analysis = analyzer.analyzeDuplicateGroup(group);
             
             displayGroupAnalysis(i + 1, analysis);
         }
         
-        displaySummary(duplicateGroups);
+        displaySummary(sortedGroups);
         log.info("=== End of Analysis ===");
     }
     
@@ -234,11 +241,12 @@ public class DuplicateDetector {
         
         log.info("");
         log.info("💡 Next Steps:");
-        log.info("   1. Review high severity duplications first");
-        log.info("   2. Apply recommended design patterns");
-        log.info("   3. Consider creating shared utility classes");
-        log.info("   4. Update unit tests after refactoring");
-        log.info("   5. Run the tool again to verify improvements");
+        log.info("   1. Review groups in order (highest similarity first)");
+        log.info("   2. Focus on high severity duplications");
+        log.info("   3. Apply recommended design patterns");
+        log.info("   4. Consider creating shared utility classes");
+        log.info("   5. Update unit tests after refactoring");
+        log.info("   6. Run the tool again to verify improvements");
     }
     
     /**
