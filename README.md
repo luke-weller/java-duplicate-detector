@@ -5,9 +5,17 @@ A powerful tool to scan Java projects and identify duplicate or similar logic th
 ## Features
 
 - **Comprehensive Scanning**: Scans entire Java projects recursively, excluding build directories
-- **Multiple Similarity Algorithms**: Uses structural, content, and signature-based similarity detection
+- **Advanced Similarity Analysis**: Uses sophisticated algorithms to detect similar methods based on structure, content, and patterns
 - **Configurable Thresholds**: Adjustable similarity thresholds for different detection sensitivity
-- **Detailed Reporting**: Provides detailed console output with method locations and similarity scores
+- **Enhanced Detailed Reporting**: Provides comprehensive analysis with:
+  - **Similarity Type Classification**: Exact, Signature, Structural, or Generic similarity
+  - **Severity Assessment**: High, Medium, or Low priority issues
+  - **Refactoring Recommendations**: Specific design patterns and best practices
+  - **Code Quality Insights**: Method length analysis, naming suggestions, and architectural concerns
+  - **Cross-Class Analysis**: Identifies duplications across different classes
+  - **Parameter Pattern Detection**: Common parameter types and validation patterns
+  - **Control Flow Analysis**: Identifies similar loops, conditionals, and method call patterns
+- **Actionable Recommendations**: Specific refactoring suggestions for each type of duplication
 - **Smart Filtering**: Automatically filters out short methods and simple accessors (getters/setters)
 - **Robust Error Handling**: Graceful handling of parsing errors and invalid files
 - **Extensive Testing**: Comprehensive unit tests with 90%+ code coverage
@@ -91,25 +99,64 @@ The tool will prompt you to enter the project path.
 ## Example Output
 
 ```
-=== Java Duplicate Detector ===
-This tool scans Java projects to find duplicate or similar methods.
+=== Java Duplicate Detector - Detailed Analysis ===
+🔍 Found 2 groups of similar methods requiring attention:
 
-Enter the path to your Java project: /path/to/project
+🚨 Group 1: Exact Code Duplication (100.0% similarity)
+📋 Methods involved (2 methods across 2 classes):
+   • DataProcessor.processData() in src/main/java/com/test/DataProcessor.java (lines 15-45)
+   • ArrayProcessor.processData() in src/main/java/com/test/ArrayProcessor.java (lines 23-53)
 
-=== Duplicate Detection Results ===
-Found 2 groups of similar methods:
+⚠️  Cross-class duplication detected!
+   Consider creating a shared utility class or service
 
-Group 1 (Similarity: 85.2%):
-  - DataProcessor.processData() in src/main/java/com/test/DataProcessor.java (lines 15-45)
-  - ArrayProcessor.processData() in src/main/java/com/test/ArrayProcessor.java (lines 23-53)
-  Suggested refactoring: Extract common logic into a shared method
+🎯 Recommended Pattern: Extract Method + Strategy Pattern
+💡 Refactoring Recommendations:
+   • Extract the identical code into a shared utility method
+   • Consider creating a common base class or interface
+   • Apply the Template Method pattern if the methods follow similar algorithms
+   • Use composition over inheritance to share common functionality
 
-Group 2 (Similarity: 78.9%):
-  - DataProcessor.calculateSum() in src/main/java/com/test/DataProcessor.java (lines 47-67)
-  - ArrayProcessor.calculateSum() in src/main/java/com/test/ArrayProcessor.java (lines 55-75)
-  Suggested refactoring: Extract common logic into a shared method
+🔧 Code Quality Insights:
+   • Methods have identical names - consider more descriptive naming
+   • Methods are spread across 2 different classes
 
-=== End of Results ===
+⚠️ Group 2: Signature Similarity (78.9% similarity)
+📋 Methods involved (2 methods across 1 class):
+   • DataProcessor.calculateSum() in src/main/java/com/test/DataProcessor.java (lines 47-67)
+   • DataProcessor.calculateAverage() in src/main/java/com/test/DataProcessor.java (lines 69-89)
+
+🎯 Recommended Pattern: Strategy Pattern + Interface Segregation
+💡 Refactoring Recommendations:
+   • Create a common interface defining the contract
+   • Apply the Strategy pattern to handle different implementations
+   • Consider using generics to make the methods more flexible
+   • Extract common parameter validation logic
+
+🔧 Code Quality Insights:
+   • Method calculateSum is quite long (156 chars) - consider breaking it down
+   • Method calculateAverage is quite long (158 chars) - consider breaking it down
+
+📊 Analysis Insights:
+   • Common parameter types detected: List<Integer>
+🔗 Common Parameter Types: List<Integer>
+
+📈 Summary:
+   • Total duplicate methods: 4
+   • High severity issues: 1
+   • Cross-class duplications: 1
+   • Groups requiring immediate attention: 1
+
+🚨 Priority: Focus on high severity issues first!
+
+💡 Next Steps:
+   1. Review high severity duplications first
+   2. Apply recommended design patterns
+   3. Consider creating shared utility classes
+   4. Update unit tests after refactoring
+   5. Run the tool again to verify improvements
+
+=== End of Analysis ===
 ```
 
 ## Configuration

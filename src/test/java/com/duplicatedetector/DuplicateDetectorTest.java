@@ -36,7 +36,7 @@ class DuplicateDetectorTest {
             String output = outputStream.toString();
             
             // Verify that the tool found duplicate methods
-            assertTrue(output.contains("Duplicate Detection Results"));
+            assertTrue(output.contains("Java Duplicate Detector - Detailed Analysis"));
             assertTrue(output.contains("Found") && output.contains("groups of similar methods"));
             
         } finally {

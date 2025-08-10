@@ -268,14 +268,99 @@ public class SimilarityDetector {
         
         if (allIdentical) return "EXACT";
         
-        // Check if methods have similar signatures
-        boolean similarSignatures = methods.stream()
+        // Check if methods have identical signatures (same return type and parameters)
+        boolean identicalSignatures = methods.stream()
                 .map(MethodInfo::getSignature)
                 .distinct()
-                .count() <= 2;
+                .count() == 1;
+        
+        if (identicalSignatures) return "SIGNATURE";
+        
+        // Check if methods have similar signatures (same parameter count and types)
+        boolean similarSignatures = hasSimilarSignatures(methods);
         
         if (similarSignatures) return "SIGNATURE";
         
-        return "STRUCTURAL";
+        // Check if methods have similar structural patterns
+        boolean structuralSimilarity = hasStructuralSimilarity(methods);
+        
+        if (structuralSimilarity) return "STRUCTURAL";
+        
+        return "GENERIC";
+    }
+    
+    /**
+     * Checks if methods have similar signatures.
+     */
+    private boolean hasSimilarSignatures(List<MethodInfo> methods) {
+        if (methods.size() < 2) return false;
+        
+        // Get parameter types for all methods
+        List<List<String>> allParamTypes = methods.stream()
+                .map(method -> extractParameterTypes(method.getSignature()))
+                .collect(Collectors.toList());
+        
+        // Check if all methods have the same number of parameters
+        int paramCount = allParamTypes.get(0).size();
+        boolean sameParamCount = allParamTypes.stream()
+                .allMatch(params -> params.size() == paramCount);
+        
+        if (!sameParamCount) return false;
+        
+        // Check if parameter types are similar (at least 50% match)
+        if (paramCount > 0) {
+            for (int paramIndex = 0; paramIndex < paramCount; paramIndex++) {
+                int finalParamIndex = paramIndex;
+                Set<String> typesAtPosition = allParamTypes.stream()
+                        .map(params -> params.get(finalParamIndex))
+                        .collect(Collectors.toSet());
+                
+                // If more than half have the same type at this position
+                if (typesAtPosition.size() <= Math.ceil(methods.size() / 2.0)) {
+                    return true;
+                }
+            }
+        }
+        
+        return false;
+    }
+    
+    /**
+     * Checks if methods have structural similarity.
+     */
+    private boolean hasStructuralSimilarity(List<MethodInfo> methods) {
+        if (methods.size() < 2) return false;
+        
+        // Check for similar control flow patterns
+        List<String> normalizedBodies = methods.stream()
+                .map(method -> normalizeMethodBody(method.getBody()))
+                .collect(Collectors.toList());
+        
+        // Look for common structural elements
+        String firstBody = normalizedBodies.get(0);
+        
+        // Check if bodies contain similar structural patterns
+        boolean hasLoops = firstBody.contains("for") || firstBody.contains("while");
+        boolean hasConditionals = firstBody.contains("if") || firstBody.contains("switch");
+        boolean hasMethodCalls = firstBody.contains("(") && firstBody.contains(")");
+        
+        // If the first method has these patterns, check if others do too
+        if (hasLoops || hasConditionals || hasMethodCalls) {
+            long methodsWithSimilarStructure = normalizedBodies.stream()
+                    .filter(body -> {
+                        boolean bodyHasLoops = body.contains("for") || body.contains("while");
+                        boolean bodyHasConditionals = body.contains("if") || body.contains("switch");
+                        boolean bodyHasMethodCalls = body.contains("(") && body.contains(")");
+                        
+                        return (hasLoops == bodyHasLoops) && 
+                               (hasConditionals == bodyHasConditionals) && 
+                               (hasMethodCalls == bodyHasMethodCalls);
+                    })
+                    .count();
+            
+            return methodsWithSimilarStructure >= methods.size() * 0.7; // 70% threshold
+        }
+        
+        return false;
     }
 }
