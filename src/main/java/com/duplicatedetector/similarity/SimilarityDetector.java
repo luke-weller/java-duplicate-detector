@@ -19,7 +19,6 @@ public class SimilarityDetector {
     
     private static final double DEFAULT_SIMILARITY_THRESHOLD = 0.7;
     private static final int MIN_METHOD_LENGTH = 50;
-    private static final int BATCH_SIZE = 1000; // Process methods in batches
     private static final int MAX_PARALLEL_THREADS = Runtime.getRuntime().availableProcessors();
     
     // Cache for similarity calculations to avoid recomputation

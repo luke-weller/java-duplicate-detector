@@ -15,6 +15,7 @@ A powerful tool to scan Java projects and identify duplicate or similar logic th
   - **Cross-Class Analysis**: Identifies duplications across different classes
   - **Parameter Pattern Detection**: Common parameter types and validation patterns
   - **Control Flow Analysis**: Identifies similar loops, conditionals, and method call patterns
+  - **File Reports**: Generates detailed text reports saved to `reports/` directory with timestamps
 - **Actionable Recommendations**: Specific refactoring suggestions for each type of duplication
 - **Smart Filtering**: Automatically filters out short methods and simple accessors (getters/setters)
 - **Robust Error Handling**: Graceful handling of parsing errors and invalid files
@@ -129,7 +130,13 @@ customConfig.setBatchSize(2000);
 detector.run(Paths.get("/path/to/project"), customConfig);
 ```
 
-## Example Output
+## Output and Reports
+
+The tool generates both console output and detailed file reports.
+
+### Console Output
+
+The console displays a comprehensive analysis with emojis and formatting for easy reading:
 
 ```
 === Java Duplicate Detector - Detailed Analysis ===
@@ -183,13 +190,91 @@ detector.run(Paths.get("/path/to/project"), customConfig);
 🚨 Priority: Focus on high severity issues first!
 
 💡 Next Steps:
-   1. Review high severity duplications first
-   2. Apply recommended design patterns
-   3. Consider creating shared utility classes
-   4. Update unit tests after refactoring
-   5. Run the tool again to verify improvements
+   1. Review groups in order (highest similarity first)
+   2. Focus on high severity duplications
+   3. Apply recommended design patterns
+   4. Consider creating shared utility classes
+   5. Update unit tests after refactoring
+   6. Run the tool again to verify improvements
 
 === End of Analysis ===
+📄 Detailed report saved to: /path/to/project/reports/duplicate-detection-report_20250810_161016.txt
+```
+
+### File Reports
+
+The tool automatically generates detailed text reports saved to a `reports/` directory in the project root. Reports include:
+
+- **Header Information**: Generation timestamp, project path, and configuration used
+- **Summary Statistics**: Total groups, methods, severity breakdown, and cross-class issues
+- **Detailed Analysis**: Complete analysis for each duplicate group with:
+  - Method details with file paths and line numbers
+  - Severity assessment and recommendations
+  - Code quality insights and architectural suggestions
+  - Parameter pattern analysis
+- **Recommendations**: Actionable next steps for refactoring
+- **Footer**: Tool attribution and completion markers
+
+**Report File Location**: `{project-root}/reports/duplicate-detection-report_YYYYMMDD_HHMMSS.txt`
+
+**Example Report Structure**:
+```
+================================================================================
+JAVA DUPLICATE DETECTOR - DETAILED ANALYSIS REPORT
+================================================================================
+Generated: 2025-08-10 16:10:16
+Project: /path/to/project
+Configuration: PerformanceConfig{...}
+
+================================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Total duplicate groups: 3
+Total duplicate methods: 6
+High severity issues: 1
+Cross-class duplications: 1
+
+DETAILED ANALYSIS
+================================================================================
+
+Group 1: Exact Code Duplication (100.0 similarity)
+------------------------------------------------------------
+Severity: HIGH
+Methods involved (2 methods across 2 classes):
+  • RefactoringAnalyzer.extractParameterTypes() in src/main/java/.../RefactoringAnalyzer.java (lines 244-256)
+  • SimilarityDetector.extractParameterTypes() in src/main/java/.../SimilarityDetector.java (lines 440-452)
+
+⚠️  Cross-class duplication detected!
+   Consider creating a shared utility class or service
+
+Recommended Pattern: Extract Method + Strategy Pattern
+
+Refactoring Recommendations:
+  • Extract the identical code into a shared utility method
+  • Consider creating a common base class or interface
+  • Apply the Template Method pattern if the methods follow similar algorithms
+  • Use composition over inheritance to share common functionality
+
+Code Quality Insights:
+  • Method extractParameterTypes is quite long (433 chars) - consider breaking it down
+  • Methods have identical names - consider more descriptive naming
+  • Methods are spread across 2 different classes
+
+...
+
+RECOMMENDATIONS AND NEXT STEPS
+================================================================================
+1. Review groups in order (highest similarity first)
+2. Focus on high severity duplications
+3. Apply recommended design patterns
+4. Consider creating shared utility classes
+5. Update unit tests after refactoring
+6. Run the tool again to verify improvements
+
+================================================================================
+Report generated by Java Duplicate Detector
+================================================================================
 ```
 
 ## Configuration
